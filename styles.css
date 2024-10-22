@@ -60,7 +60,7 @@ body{
     margin: 39px 40px 40px;
 }
 .omelette-img {
-    max-width: 656px;
+    width: 100%;
     height: 300px;
     border-radius: 12px;
 }
@@ -136,4 +136,31 @@ span:last-child{
     border-bottom: 1px solid #fff;
     margin-bottom: 0;
     padding-bottom: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 616px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .container{
+        max-width: 375px;
+        margin: 0;
+    }
+    .container-top{
+        margin: 0;
+    }
+    .omelette-img {
+        width: 375px;
+        height: 171px;
+    }
+    .container-main {
+        margin: 40px 35px 39px;
+    }
+    h1{
+        font-size: 36px;
+        line-height: 36px;
+    }
 }
